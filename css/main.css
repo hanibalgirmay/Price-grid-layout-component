@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --rightYellow: hsl(71, 73%, 54%);
+    --rightYellowHover: hsl(71, 68%, 46%);
+    --LightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+    --paddingX: 1.8rem;
+    --paddingY: 1.5rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: 'Karla', sans-serif;
+    background:var(--LightGray);
+    color:var(--grayishBlue);
+    padding: var(--paddingX);
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-container{
+    border-radius: .5rem;
+    overflow: hidden;
+    max-width: 40rem;
+    /* margin: auto; */
+}
+.price-container > *{
+    padding: var(--paddingX) var(--paddingY);
+}
+
+.community {
+    background:#fff;
+}
+.community h2{
+    color: var(--cyan);
+    font-weight: bold;
+    line-height: 2.5;
+    font-size: 1.2rem;
+}
+.community h3 {
+    color: var(--rightYellow);
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+.community p {
+    font-size: .85rem;
+    line-height: 1.7;
+}
+
+ul{
+    list-style: none;
+}
+.subscription,
+.why {
+    background: var(--cyan);
+    color:#fff;
+    padding: var(--paddingY);
+}
+.subscription__price{
+    font-size: 1rem;
+    display:flex;
+    align-items: center;
+    margin: 0 !important;
+}
+.subscription__price span{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right:.5rem;
+}
+.subscription p {
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+}
+.btn{
+    display:block;
+    width:100%;
+    background: var(--rightYellow);
+    color:var(--LightGray);
+    padding: 1rem;
+    border:none;
+    outline:none;
+    box-shadow:2px 6px 12px rgba(0,0,0,.1);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition:.2s ease-in-out;
+}
+.btn:hover{
+    background: var(--rightYellowHover);
+}
+.why{
+    opacity: .7;
+}
+.why h3{
+    margin-bottom: 1rem;
+}
+.why .why-content{
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    opacity:.8;
+}
+
+
+@media only screen and (min-width:42.5rem) {
+    .price-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,auto);
+        
+    }
+    .community{
+        grid-column: 1/3;
+    }
+}
