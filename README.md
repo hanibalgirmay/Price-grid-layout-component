@@ -2,8 +2,8 @@
 
 # Codepen and github
 
-<a href="https://codepen.io/hanibal">codepen</a><br>
-<a href="https://github.com/hanibalgirmay">Github</a><br>
+<a href="https://codepen.io/hanibal" target="_blank">codepen</a><br>
+<a href="https://github.com/hanibalgirmay" target="_blank">Github</a><br>
 
 # Frontend Mentor - Single Price Grid Component
 
